@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Password Generator</title>
     <link rel="stylesheet" type="text/css"  href="pwgenerator.css">
+    <script src="pwgenerator.js"></script>
 </head>
 <body>
     <div class="container">
         <h1 id="title1">Generate a <br/> <span id="title2" > random password</span> </h1>
         <p class="subtext">Never use an insecure password again.</p>
         <div class="sub-container1">
-            <button>Generate passwords</button>
+            <button id="generate-btn" onclick="generateFourPwd()">Generate passwords</button>
             <div class="slidecontainer">
                 <input type="range" min="8" max="24" value="10" >   
             </div>   
