@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Password Generator</title>
-    <link rel="stylesheet" type="text/css"  href="pwgenerator.css">
+    <link rel="stylesheet" type="text/css" href="pwgenerator.css" />
     <script src="pwgenerator.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1 id="title1">Generate a <br/> <span id="title2" > random password</span> </h1>
-        <p class="subtext">Never use an insecure password again.</p>
-        <div class="sub-container1">
-            <button id="generate-btn" onclick="generateFourPwd()">Generate passwords</button>
-            <div class="slidecontainer">
-                <input type="range" min="8" max="24" value="10" >   
-            </div>   
+      <h1 id="title1">
+        Generate a <br />
+        <span id="title2"> random password</span>
+      </h1>
+      <p class="subtext">Never use an insecure password again.</p>
+      <div class="sub-container1">
+        <div>
+          <button id="generate-btn" onclick="generateFourPwd()">
+            Generate passwords
+          </button>
         </div>
-        <div class="passwords">
-            <div class="password-active">
-             dsfdgdgdg
-            </div>
-            <div class="password-active">
-                dsfdgdgdg
-               </div>
-               <div class="password-active">
-                dsfdgdgdg
-               </div>
-               <div class="password-active">
-                dsfdgdgdg
-               </div>
+
+        <div class="slidecontainer">
+          <input type="range" min="8" max="24" value="10" id="indicator" />
+          <!-- <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
+          <p id="pwdLength">6</p>
         </div>
+      </div>
+      <div class="passwords">
+        <div class="password-active" id="password1">
+          <img src="icons/icon-dots-light.svg" />
+        </div>
+        <div class="password-active" id="password2">
+          <img src="icons/icon-dots-light.svg" />
+        </div>
+        <div class="password-active" id="password3">
+          <img src="icons/icon-dots-light.svg" />
+        </div>
+        <div class="password-active" id="password4">
+          <img src="icons/icon-dots-light.svg" />
+        </div>
+      </div>
     </div>
- 
-</body>
+  </body>
 </html>
